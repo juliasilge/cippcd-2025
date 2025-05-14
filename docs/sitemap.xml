@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://juliasilge.github.io/cippcd-2025/slides/05-websites.html</loc>
+    <lastmod>2025-05-14T17:58:12.061Z</lastmod>
+  </url>
+  <url>
     <loc>https://juliasilge.github.io/cippcd-2025/slides/03-presentations.html</loc>
     <lastmod>2025-05-14T17:18:50.413Z</lastmod>
   </url>
@@ -18,6 +22,6 @@
   </url>
   <url>
     <loc>https://juliasilge.github.io/cippcd-2025/slides/04-dashboards.html</loc>
-    <lastmod>2025-05-14T17:43:22.648Z</lastmod>
+    <lastmod>2025-05-14T17:47:51.003Z</lastmod>
   </url>
 </urlset>

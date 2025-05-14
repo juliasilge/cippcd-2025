@@ -1,5 +1,138 @@
 [
   {
+    "objectID": "slides/05-websites.html#quarto-projects",
+    "href": "slides/05-websites.html#quarto-projects",
+    "title": "Websites and Blogs",
+    "section": "Quarto projects",
+    "text": "Quarto projects\n\nQuarto projects have a _quarto.yml file\nThe type field in this file indicates the type of project:\n\ndefault: Collection of documents\nwebsite: Websites (and blogs)\nbooks: Books\nmanuscript: Journal manuscript with embedded computing and JATS bundle"
+  },
+  {
+    "objectID": "slides/05-websites.html#components",
+    "href": "slides/05-websites.html#components",
+    "title": "Websites and Blogs",
+    "section": "Components",
+    "text": "Components\n\n\nA Quarto Project is a directory that contains a file called _quarto.yml\n\n\n\n\n\n\nThis is a Quarto Project\nmy-folder/\n├── _quarto.yml\n├── my-document.ipynb\n\nThis is not\nmy-folder/\n├── my-document.ipynb"
+  },
+  {
+    "objectID": "slides/05-websites.html#quarto.yml",
+    "href": "slides/05-websites.html#quarto.yml",
+    "title": "Websites and Blogs",
+    "section": "_quarto.yml",
+    "text": "_quarto.yml\nA YAML file with particular keys and values that Quarto recognizes (unrecognized keys are ignored)\n\n\n_quarto.yml\n\nproject:\n  title: \"A Barebones Project\""
+  },
+  {
+    "objectID": "slides/05-websites.html#quarto.yml-1",
+    "href": "slides/05-websites.html#quarto.yml-1",
+    "title": "Websites and Blogs",
+    "section": "_quarto.yml",
+    "text": "_quarto.yml\nA YAML file with particular keys and values that Quarto recognizes (unrecognized keys are ignored)\n\n\n_quarto.yml\n\nproject:\n  type: website\n  output-dir: docs\n\nwebsite:\n  page-navigation: true\n  title: \"Unlocking Dynamic Reproducible Documents\"\n  description: \"A Quarto Tutorial for Scientific Communication on Quarto at SciPy 2024\"\n\n  repo-url: https://github.com/mine-cetinkaya-rundel/quarto-scipy24\n  repo-actions: [edit, issue]\n\n  open-graph: true\n\n  sidebar:\n    background: \"#D1D9E3\"\n    logo: \"images/quarto-scipy24-site-logo.png\"\n    pinned: true\n    align: center\n    tools:\n      - icon: github\n        href: https://github.com/mine-cetinkaya-rundel/quarto-scipy24\n        text: GitHub repo\n      - icon: code-square\n        href: https://code.visualstudio.com/\n        text: VS Code\n\n    style: docked\n    search: true\n    collapse-level: 2\n    contents:\n      - href: index.qmd\n        text: Home\n      - href: setup.qmd\n        text: Setup\n      - section: Part 1\n        contents:\n          - href: 1-1-hello/index.qmd\n            text: Hello\n          - href: 1-2-documents/index.qmd\n            text: Documents\n          - href: 1-3-presentations/index.qmd\n            text: Presentations\n          - href: 1-4-dashboards/index.qmd\n            text: Dashboards\n      - section: Part 2\n        contents:\n          - href: 2-1-websites/index.qmd\n            text: Websites and blogs\n          - href: 2-2-books/index.qmd\n            text: Books\n          - href: 2-3-manuscripts/index.qmd\n            text: Manuscripts\n\n  page-footer:\n    right: \"This page is built with 💚 and [Quarto](https://quarto.org/).\"\n    left: \"&copy; Copyright 2024, Mine Çetinkaya-Rundel\"\n    background: \"#D1D9E3\" # Arylide Yellow\n\nformat:\n  html:\n    theme:\n      light: [cosmo, style/quarto-scipy24.scss]\n      dark: [cosmo, style/quarto-scipy24.scss, style/dark.scss]\n    linkcolor: \"#58779b\"\n    toc: true\n    code-copy: true\n    code-overflow: wrap\n    mainfont: \"Atkinson Hyperlegible\"\n\nexecute:\n  freeze: auto\n  echo: true"
+  },
+  {
+    "objectID": "slides/05-websites.html#quarto-websites",
+    "href": "slides/05-websites.html#quarto-websites",
+    "title": "Websites and Blogs",
+    "section": "Quarto websites",
+    "text": "Quarto websites\n\n\nWebsites are essentially format: html + a Quarto Project file\nBut a website is different than format: html in that it has multiple pages\nWebsites and books are very similar in that they associate multiple pages/resources into a connected resource\n\nIn books, you can cross-reference between pages (chapters), but (currently), you can’t cross-reference between pages in websites"
+  },
+  {
+    "objectID": "slides/05-websites.html#our-turn",
+    "href": "slides/05-websites.html#our-turn",
+    "title": "Websites and Blogs",
+    "section": "Our turn",
+    "text": "Our turn\n\n\n\nActivity\n\n\nLet’s build a website that features a few of the notebooks we worked on and highlight the following features of Quarto websites:\n\nAdd a _quarto.yml\nCreate a landing page: index.qmd\nExplore navigation options: navbar, sidebar\nApply themes, including a light and dark theme toggle\nPublish to QuartoPub with quarto publish\nAn aspect of the workshop webpage that you fancy?"
+  },
+  {
+    "objectID": "slides/05-websites.html#your-turn",
+    "href": "slides/05-websites.html#your-turn",
+    "title": "Websites and Blogs",
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\nActivity\n\n\n\nAdd one more notebook that has at least one executable code cell and add it to the navigation list in _quarto.yml and render your site\nAdd an about page, about.qmd, personalize it, and add it to the navigation list in _quarto.yml and render your site\nRe-publish on QuartoPub with quarto publish\n\n\n\n\n\n  \n    −\n    +\n \n 10:00"
+  },
+  {
+    "objectID": "slides/05-websites.html#listings-1",
+    "href": "slides/05-websites.html#listings-1",
+    "title": "Websites and Blogs",
+    "section": "Listings",
+    "text": "Listings\n\nListings enable you to automatically generate the contents of a page (or region of a page) from a list of Quarto documents or other custom data\nUseful for creating blogs, providing navigation for large numbers of documents, or any other scenario where you’d like the contents of a page to be automatically updated as documents are added, updated, and removed"
+  },
+  {
+    "objectID": "slides/05-websites.html#blogs",
+    "href": "slides/05-websites.html#blogs",
+    "title": "Websites and Blogs",
+    "section": "Blogs",
+    "text": "Blogs\n\n\n\nActivity\n\n\nLet’s now add a blog component to our website:\n\nMove two of your notebook files into a new a folder called posts\nCollect these notebooks in a new blog page using the listings feature\n\nDon’t forget to make corresponding changes in your _quarto.yml file\n\nExperiment with the style of listings and choose one you like\n\n\n\n\n\n  \n    −\n    +\n \n 10:00"
+  },
+  {
+    "objectID": "slides/05-websites.html#when-should-code-be-re-run",
+    "href": "slides/05-websites.html#when-should-code-be-re-run",
+    "title": "Websites and Blogs",
+    "section": "When should code be re-run?",
+    "text": "When should code be re-run?\n\n\nYou might have a reason to re-run all code in a Quarto website (every single cell in every single document) every time you render the website\nBut, chances are, that’s not what you want\n\nJust playing around styling – you probably don’t want to run the code again\nChanged some code in a document – you probably want to re-run the code in that document, but not necessarily others\nMade a big change affecting computations on many or all pages – you probably want to re-run all code\n\nfreeze and cache options give you fine control over these decisions"
+  },
+  {
+    "objectID": "slides/05-websites.html#freeze",
+    "href": "slides/05-websites.html#freeze",
+    "title": "Websites and Blogs",
+    "section": "Freeze",
+    "text": "Freeze\n\nThe freeze option controls when/if computational documents be re-rendered during a global project render:\n\nexecute:\n  freeze: true  # never re-render during project render\nexecute:\n  freeze: auto  # re-render only when source changes\nexecute:\n  freeze: false  # always re-render"
+  },
+  {
+    "objectID": "slides/05-websites.html#freeze-1",
+    "href": "slides/05-websites.html#freeze-1",
+    "title": "Websites and Blogs",
+    "section": "Freeze",
+    "text": "Freeze\n\nThe freeze option is typically added to a _metadata.yml file within a specific directory, affecting all files in that directory\nFor blogs, set freeze in _metadata.yml at the root of the posts directory\nYou can have it only within specific subdirectories for more complex sites"
+  },
+  {
+    "objectID": "slides/05-websites.html#freeze-and-jupyter-notebooks",
+    "href": "slides/05-websites.html#freeze-and-jupyter-notebooks",
+    "title": "Websites and Blogs",
+    "section": "Freeze and Jupyter notebooks",
+    "text": "Freeze and Jupyter notebooks\n\nWhen rendering an .ipynb, Quarto will not execute the cells within the notebook by default, assuming that you have already executed them while editing the notebook\nTo execute the cells, pass the --execute flag to render:\n\n\n\nTerminal\n\nquarto render notebook.ipynb --execute\n\n\nOr specify this behavior within the notebook’s YAML front matter:\n\n---\nexecute:\n  enabled: true\n---"
+  },
+  {
+    "objectID": "slides/05-websites.html#cache",
+    "href": "slides/05-websites.html#cache",
+    "title": "Websites and Blogs",
+    "section": "Cache",
+    "text": "Cache\n\nCache stores the results of computations for a specific file\nCache invalidation is triggered by changes in chunk source code (or other cache attributes you’ve defined)\ncache can also be set at the chunk level, particularly useful for computationally expensive chunks"
+  },
+  {
+    "objectID": "slides/05-websites.html#freeze-vs.-cache",
+    "href": "slides/05-websites.html#freeze-vs.-cache",
+    "title": "Websites and Blogs",
+    "section": "Freeze vs. cache",
+    "text": "Freeze vs. cache\n\nFreeze option is typically set\n\nfor the whole website in _quarto.yml, or\nfor files within a directory in _metadata.yml in that directory\n\n\nexecute: \n  freeze: auto"
+  },
+  {
+    "objectID": "slides/05-websites.html#freeze-vs.-cache-1",
+    "href": "slides/05-websites.html#freeze-vs.-cache-1",
+    "title": "Websites and Blogs",
+    "section": "Freeze vs. cache",
+    "text": "Freeze vs. cache\n\nCache option is typically set for a given file or for individual chunk(s) in a file.\n\nexecute:\n  cache: true\nor\n\n```{python}\n1 + 1\n```\n\n2"
+  },
+  {
+    "objectID": "slides/05-websites.html#quartopub",
+    "href": "slides/05-websites.html#quartopub",
+    "title": "Websites and Blogs",
+    "section": "QuartoPub",
+    "text": "QuartoPub\n\nQuarto Pub is a free publishing service for content created with Quarto, ideal for blogs, course or project websites, books, presentations, and personal hobby sites\nPublish with quarto publish:\n\n\n\nTerminal\n\nquarto publish quarto-pub\n\n\nGain a _publish.yml that is safe to check into version control"
+  },
+  {
+    "objectID": "slides/05-websites.html#other-venues",
+    "href": "slides/05-websites.html#other-venues",
+    "title": "Websites and Blogs",
+    "section": "Other venues",
+    "text": "Other venues\n\nGitHub Pages\nPosit Connect\nNetlify\nMore venues"
+  },
+  {
+    "objectID": "slides/05-websites.html#learn-more",
+    "href": "slides/05-websites.html#learn-more",
+    "title": "Websites and Blogs",
+    "section": "Learn more",
+    "text": "Learn more\nquarto.org/docs/websites"
+  },
+  {
     "objectID": "slides/03-presentations.html#components",
     "href": "slides/03-presentations.html#components",
     "title": "Presentations",
@@ -581,11 +714,11 @@
     "text": "Components\n\nMetadata: YAML\nText: Markdown, likely placed in cards\nCode: Executed via jupyter (or knitr), automatically placed in cards\n\n\nWeave it all together, and you have a beautiful, functional dashboard!"
   },
   {
-    "objectID": "slides/04-dashboards.html#our-turn-dashing-through-the-snow",
-    "href": "slides/04-dashboards.html#our-turn-dashing-through-the-snow",
+    "objectID": "slides/04-dashboards.html#our-turn",
+    "href": "slides/04-dashboards.html#our-turn",
     "title": "Dashboards",
-    "section": "Our turn: Dashing through the snow",
-    "text": "Our turn: Dashing through the snow\n\n\n\nActivity\n\n\nLet’s review the components of hello-penguins-dashboard.qmd."
+    "section": "Our turn",
+    "text": "Our turn\n\n\n\nActivity\n\n\nLet’s review the components of hello-penguins-dashboard.qmd."
   },
   {
     "objectID": "slides/04-dashboards.html#notebook-dashboard",
@@ -651,6 +784,13 @@
     "text": "Plots\n\n\nplotly\n```{python}\n#| title: GDP and Life Expectancy\nimport plotly.express as px\ndf = px.data.gapminder()\npx.scatter(\n  df, x=\"gdpPercap\", y=\"lifeExp\", \n  animation_frame=\"year\", animation_group=\"country\",\n  size=\"pop\", color=\"continent\", hover_name=\"country\", \n  facet_col=\"continent\", log_x=True, size_max=45, \n  range_x=[100,100000], range_y=[25,90]\n)\n```"
   },
   {
+    "objectID": "slides/04-dashboards.html#plots-1",
+    "href": "slides/04-dashboards.html#plots-1",
+    "title": "Dashboards",
+    "section": "Plots",
+    "text": "Plots\n\n\nipyleaflet\n```{python}\n#| title: \"World Map\"\n#| padding: 0px\nfrom ipyleaflet import Map, basemaps, basemap_to_tiles\nMap(basemap=basemap_to_tiles(basemaps.OpenStreetMap.Mapnik),\n    center=(48.204793, 350.121558), zoom=2)\n```"
+  },
+  {
     "objectID": "slides/04-dashboards.html#component-tables",
     "href": "slides/04-dashboards.html#component-tables",
     "title": "Dashboards",
@@ -712,19 +852,5 @@
     "title": "Dashboards",
     "section": "Learn more",
     "text": "Learn more\nquarto.org/docs/dashboards"
-  },
-  {
-    "objectID": "slides/04-dashboards.html#plots-1",
-    "href": "slides/04-dashboards.html#plots-1",
-    "title": "Dashboards",
-    "section": "Plots",
-    "text": "Plots\n\n\nipyleaflet\n```{python}\n#| title: \"World Map\"\n#| padding: 0px\nfrom ipyleaflet import Map, basemaps, basemap_to_tiles\nMap(basemap=basemap_to_tiles(basemaps.OpenStreetMap.Mapnik),\n    center=(48.204793, 350.121558), zoom=2)\n```"
-  },
-  {
-    "objectID": "slides/04-dashboards.html#our-turn",
-    "href": "slides/04-dashboards.html#our-turn",
-    "title": "Dashboards",
-    "section": "Our turn",
-    "text": "Our turn\n\n\n\nActivity\n\n\nLet’s review the components of hello-penguins-dashboard.qmd."
   }
 ]
