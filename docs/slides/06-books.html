@@ -14,7 +14,7 @@
   <meta name="generator" content="quarto-1.6.42">
 
   <meta name="author" content="Julia Silge">
-  <title>Dynamic Reproducible Documents for Public Policy with Quarto – Presentations</title>
+  <title>Dynamic Reproducible Documents for Public Policy with Quarto – Books</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -125,10 +125,10 @@
       margin-right: 0; 
     }
   </style>
-<meta property="og:title" content="Presentations – Dynamic Reproducible Documents for Public Policy with Quarto">
+<meta property="og:title" content="Books – Dynamic Reproducible Documents for Public Policy with Quarto">
 <meta property="og:description" content="CIPPCD 2025: Dynamic ReproducibleDocuments for Public Policy with Quarto">
 <meta property="og:site_name" content="Dynamic Reproducible Documents for Public Policy with Quarto">
-<meta name="twitter:title" content="Presentations – Dynamic Reproducible Documents for Public Policy with Quarto">
+<meta name="twitter:title" content="Books – Dynamic Reproducible Documents for Public Policy with Quarto">
 <meta name="twitter:description" content="CIPPCD 2025: Dynamic ReproducibleDocuments for Public Policy with Quarto">
 <meta name="twitter:card" content="summary">
 </head>
@@ -137,7 +137,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-gradient="linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%)" class="quarto-title-block center">
-  <h1 class="title">Presentations</h1>
+  <h1 class="title">Books</h1>
   <p class="subtitle">CIPPCD 2025: Dynamic Reproducible<br>Documents for Public Policy with Quarto</p>
 
 <div class="quarto-title-authors">
@@ -164,20 +164,18 @@ Julia Silge
 </section>
 
 <section>
-<section id="anatomy-of-a-quarto-presentation" class="title-slide slide level1 center" data-background-gradient="linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%)">
-<h1>Anatomy of a Quarto presentation</h1>
+<section id="anatomy-of-a-quarto-book" class="title-slide slide level1 center" data-background-gradient="linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%)">
+<h1>Anatomy of a Quarto book</h1>
 
 </section>
-<section id="components" class="slide level2">
-<h2>Components</h2>
-<ol type="1">
-<li><p>Metadata: YAML</p></li>
-<li><p>Text: Markdown</p></li>
-<li><p>Code: Executed via <code>jupyter</code> (or <code>knitr</code>)</p></li>
-</ol>
-<div class="fragment">
-<p><strong>Weave it all together</strong>, and you have a beautiful, functional slide deck!</p>
-</div>
+<section id="quarto-books" class="slide level2">
+<h2>Quarto books</h2>
+<ul>
+<li><p>Books are also essentially <code>format: html</code> + a Quarto Project</p></li>
+<li><p>But a book is different than <code>format: html</code> in that it has multiple pages</p></li>
+<li><p>Books and websites are very similar in that they associate multiple pages/resources into a connected resource</p></li>
+<li><p>Books and websites are different in how they treat components: pages vs.&nbsp;cross-referencable chapters for website and books, respectively</p></li>
+</ul>
 </section>
 <section id="our-turn" class="slide level2">
 <h2>Our turn</h2>
@@ -187,16 +185,13 @@ Julia Silge
 <p><strong>Activity</strong></p>
 </div>
 <div class="callout-content">
-<p>Let’s build a presentation together from <code>hello-penguins-slides.qmd</code> and showcase the following features of Quarto presentations:</p>
+<p>Let’s build a book together from some of the documents we’ve created so far and highlight the following features of Quarto websites:</p>
 <ul>
-<li>Hierarchy, headers, and document outline</li>
-<li>Incremental lists</li>
-<li>Columns</li>
-<li>Code, output location, code highlighting</li>
-<li>Logo and footer</li>
-<li>Making things fit on a slide</li>
-<li>Multiplex</li>
-<li>Publishing your presentation to Quarto Pub</li>
+<li><p><code>_quarto.yml</code></p></li>
+<li><p><code>index.qmd</code> / landing page</p></li>
+<li><p>Cross references</p></li>
+<li><p>Sections</p></li>
+<li><p>Appendices</p></li>
 </ul>
 </div>
 </div>
@@ -212,52 +207,38 @@ Julia Silge
 <div class="callout-content">
 <p>Pick up where we left off and:</p>
 <ul>
-<li>Change the <a href="https://quarto.org/docs/presentations/revealjs/advanced.html#slide-transitions">transition style</a> between slides</li>
-<li>Change the <a href="https://quarto.org/docs/presentations/revealjs/advanced.html#presentation-size">slide size</a></li>
-<li>Add <a href="https://quarto.org/docs/presentations/revealjs/presenting.html#slide-numbers">slide numbers</a></li>
+<li>Give a title to your book</li>
+<li>Add a numbered figure and cross-reference it</li>
+<li>Add a numbered figure to another chapter, cross-reference it, and observe the numbering scheme</li>
 </ul>
 </div>
 </div>
 </div>
-<div id="timer_7e804ce2b006af9afb1dc2d499cbafb0ba1d95a8" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_bfa4e331271906d0e156a66653fe81d97a6da2a9" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
  </div>
- <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
  </div>
-</section>
-<section id="our-turn-1" class="slide level2">
-<h2>Our turn</h2>
-<div class="callout callout-note no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Activity</strong></p>
-</div>
-<div class="callout-content">
-<p>Let’s continue building our a presentation together from <code>hello-penguins-slides.qmd</code> and showcase the fragments with <code>.fragment</code> and <code>fragment-index=n</code>.</p>
-</div>
-</div>
-</div>
 </section></section>
 <section>
 <section id="wrap-up" class="title-slide slide level1 center" data-background-gradient="linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%)">
 <h1>Wrap up</h1>
 
 </section>
-<section id="quarto-presentation-formats" class="slide level2">
-<h2>Quarto presentation formats</h2>
-<ul>
-<li><p><a href="https://quarto.org/docs/presentations/revealjs"><code>revealjs</code></a></p></li>
-<li><p><code>beamer</code> for LaTeX slides</p></li>
-<li><p>PowerPoint for when you <em>have to</em> collaborate via MS Office</p></li>
-</ul>
+<section id="computations" class="slide level2">
+<h2>Computations</h2>
+<p>Same <code>freeze</code> and <code>cache</code> ideas for websites apply to books</p>
+</section>
+<section id="publishing" class="slide level2">
+<h2>Publishing</h2>
+<p>Same publishing options for websites apply to books as well</p>
 </section>
 <section id="learn-more" class="slide level2">
 <h2>Learn more</h2>
-<p><a href="https://quarto.org/docs/presentations/%3E">quarto.org/docs/presentations</a></p>
-<iframe src="https://quarto.org/docs/presentations" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Presentations">
-</iframe>
+<p><a href="https://quarto.org/docs/books/">quarto.org/docs/books</a></p>
+<iframe src="https://quarto.org/docs/books" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Books"></iframe>
 </section></section>
 <section id="thanks" class="title-slide slide level1 center">
 <h1>Thanks!</h1>

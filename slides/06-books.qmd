@@ -1,0 +1,117 @@
+---
+title: "Books"
+subtitle: "CIPPCD 2025: Dynamic Reproducible<br>Documents for Public Policy with Quarto"
+author: "Julia Silge"
+institute: "Posit PBC"
+footer: "<https://juliasilge.github.io/cippcd-2025/>"
+highlight-style: atom-one
+format:
+  revealjs: 
+    theme: [default, custom.scss]
+    transition: fade
+    preview-links: auto
+    width: 1280
+    height: 720
+    title-slide-attributes: 
+      data-background-gradient: "linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%)"
+---
+
+# Hello!
+
+<center>
+
+<img src="https://github.com/juliasilge.png" style="border-radius: 50%;" width="300px"/>
+
+[{{< fa brands github >}} \@juliasilge](https://github.com/juliasilge)
+
+[{{< fa brands bluesky >}} \@juliasilge.com](https://bsky.app/profile/juliasilge.com)
+
+[{{< fa brands youtube >}} youtube.com/juliasilge](https://www.youtube.com/juliasilge)
+
+[{{< fa link >}} juliasilge.com](https://juliasilge.com/)
+
+</center>
+
+# Anatomy of a Quarto book {background-gradient="linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%)"}
+
+## Quarto books
+
+-   Books are also essentially `format: html` + a Quarto Project
+
+-   But a book is different than `format: html` in that it has multiple pages
+
+-   Books and websites are very similar in that they associate multiple pages/resources into a connected resource
+
+-   Books and websites are different in how they treat components: pages vs. cross-referencable chapters for website and books, respectively
+
+## Our turn
+
+::: {.callout-note icon=false}
+
+## Activity
+
+Let's build a book together from some of the documents we've created so far and highlight the following features of Quarto websites:
+
+-   `_quarto.yml`
+
+-   `index.qmd` / landing page
+
+-   Cross references
+
+-   Sections
+
+-   Appendices
+:::
+
+## Your turn
+
+::: {.callout-note icon=false}
+
+## Activity
+
+Pick up where we left off and:
+
+-   Give a title to your book
+-   Add a numbered figure and cross-reference it
+-   Add a numbered figure to another chapter, cross-reference it, and observe the numbering scheme
+:::
+
+{{< countdown minutes=10 >}}
+
+# Wrap up {background-gradient="linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%)"}
+
+## Computations
+
+Same `freeze` and `cache` ideas for websites apply to books
+
+## Publishing
+
+Same publishing options for websites apply to books as well
+
+## Learn more
+
+[quarto.org/docs/books](https://quarto.org/docs/books/)
+
+```{=html}
+<iframe src="https://quarto.org/docs/books" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Books"></iframe>
+```
+
+# Thanks!
+
+<center>
+
+<img src="https://github.com/juliasilge.png" style="border-radius: 50%;" width="300px"/>
+
+[{{< fa brands github >}} \@juliasilge](https://github.com/juliasilge)
+
+[{{< fa brands bluesky >}} \@juliasilge.com](https://bsky.app/profile/juliasilge.com)
+
+[{{< fa brands youtube >}} youtube.com/juliasilge](https://www.youtube.com/juliasilge)
+
+[{{< fa link >}} juliasilge.com](https://juliasilge.com/)
+
+</center>
+
+::: footer
+Slides created with [Quarto](https://quarto.org/)
+:::

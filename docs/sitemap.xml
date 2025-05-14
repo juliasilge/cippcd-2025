@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://juliasilge.github.io/cippcd-2025/slides/05-websites.html</loc>
-    <lastmod>2025-05-14T17:58:12.061Z</lastmod>
+    <loc>https://juliasilge.github.io/cippcd-2025/slides/06-books.html</loc>
+    <lastmod>2025-05-14T18:02:48.164Z</lastmod>
   </url>
   <url>
-    <loc>https://juliasilge.github.io/cippcd-2025/slides/03-presentations.html</loc>
-    <lastmod>2025-05-14T17:18:50.413Z</lastmod>
-  </url>
-  <url>
-    <loc>https://juliasilge.github.io/cippcd-2025/slides/01-hello-quarto.html</loc>
-    <lastmod>2025-05-14T02:28:43.270Z</lastmod>
-  </url>
-  <url>
-    <loc>https://juliasilge.github.io/cippcd-2025/index.html</loc>
-    <lastmod>2025-05-14T16:54:36.462Z</lastmod>
+    <loc>https://juliasilge.github.io/cippcd-2025/slides/04-dashboards.html</loc>
+    <lastmod>2025-05-14T17:47:51.003Z</lastmod>
   </url>
   <url>
     <loc>https://juliasilge.github.io/cippcd-2025/slides/02-documents.html</loc>
     <lastmod>2025-05-14T17:12:57.036Z</lastmod>
   </url>
   <url>
-    <loc>https://juliasilge.github.io/cippcd-2025/slides/04-dashboards.html</loc>
-    <lastmod>2025-05-14T17:47:51.003Z</lastmod>
+    <loc>https://juliasilge.github.io/cippcd-2025/index.html</loc>
+    <lastmod>2025-05-14T16:54:36.462Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliasilge.github.io/cippcd-2025/slides/01-hello-quarto.html</loc>
+    <lastmod>2025-05-14T02:28:43.270Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliasilge.github.io/cippcd-2025/slides/03-presentations.html</loc>
+    <lastmod>2025-05-14T17:18:50.413Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juliasilge.github.io/cippcd-2025/slides/05-websites.html</loc>
+    <lastmod>2025-05-14T17:58:12.061Z</lastmod>
   </url>
 </urlset>
