@@ -8,6 +8,9 @@ This workshop is based on the materials developed by [Mine Çetinkaya-Rundel](ht
 
 Access all the slides and workshop materials at <https://juliasilge.github.io/cippcd-2025/>.
 
+> [!IMPORTANT]
+> From GitHub Codespaces, [open the first `.qmd` file here](code/hello-penguins.qmd)!
+
 ## License
 
 All content is licensed under Creative Commons ([CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/))
