@@ -33,8 +33,9 @@ Alternatively, if you prefer to work locally, please tune into the workshop with
 - 01: [Hello, Quarto!](slides/01-hello-quarto.html)
 - 02: [Documents](slides/02-documents.html)
 - 03: [Presentations](slides/03-presentations.html)
-- 04: [Websites and blogs](slides/04-websites.html)
-- 05: [Books](slides/05-books.html)
+- 04: [Dashboards](slides/04-dashboards.html)
+- 05: [Websites and blogs](slides/05-websites.html)
+- 06: [Books](slides/06-books.html)
 
 ## Code
 
