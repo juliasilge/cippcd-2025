@@ -10,9 +10,6 @@ Access all the slides and workshop materials at <https://juliasilge.github.io/ci
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/juliasilge/cippcd-2025?quickstart=1&devcontainer_path=.devcontainer%2Fdevcontainer.json)
 
-
-Once you have GitHub Codespaces set up, [open the first `.qmd` file here](code/hello-penguins.qmd)! 🚀
-
 ## License
 
 All content is licensed under Creative Commons ([CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/))

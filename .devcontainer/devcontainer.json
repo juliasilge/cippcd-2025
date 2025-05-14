@@ -22,6 +22,11 @@
 				"ms-python.isort",
 				"ms-toolsai.jupyter"
 			]
+		},
+		"codespaces": {
+			"openFiles": [
+				"code/hello-penguins.qmd"
+			]
 		}
 	}
 }
