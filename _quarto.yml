@@ -1,0 +1,43 @@
+project:
+  type: website
+  render:
+    - "index.qmd"
+    - "slides/*qmd"
+    - "!code/"
+    - "!CODE_OF_CONDUCT.md"
+  output-dir: docs
+
+website:
+  title: "Dynamic Reproducible Documents for Public Policy with Quarto"
+  description: "An introduction to Quarto at CIPPCD 2025"
+  open-graph: true
+  twitter-card: true
+  site-url: "https://juliasilge.github.io/cippcd-2025/"
+  repo-url: "https://github.com/juliasilge/cippcd-2025"
+  repo-actions: [edit, issue]
+  search: false
+  navbar:
+    background: "#e9defa"
+    pinned: true
+    right:
+      - text: Learn more
+        menu:
+          - href: https://quarto.org/
+            text: "Quarto documentation"
+
+  page-footer:
+    left: |
+      Content {{< fa brands creative-commons >}} 2024 by [Julia Silge](https://juliasilge.com/)<br>
+      All content licensed under a {{< fa brands creative-commons >}}
+      {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-nc >}}
+      [Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
+    right: |
+      Made with [Quarto](https://quarto.org/)<br>
+      [View the source at {{< fa brands github >}} GitHub](https://github.com/juliasilge/cippcd-2024/)
+
+format:
+  html:
+    theme:
+      - cosmo
+      - footer.css
+    toc: false

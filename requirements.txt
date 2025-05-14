@@ -1,0 +1,6 @@
+great_tables
+ipykernel
+jupyter
+palmerpenguins
+pandas
+plotnine

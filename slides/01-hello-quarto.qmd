@@ -1,0 +1,302 @@
+---
+title: "Hello, Quarto!"
+subtitle: "CIPPCD 2025: Dynamic Reproducible<br>Documents for Public Policy with Quarto"
+author: "Julia Silge"
+institute: "Posit PBC"
+footer: "<https://juliasilge.github.io/cippcd-2025/>"
+highlight-style: atom-one
+format:
+  revealjs: 
+    theme: [default, custom.scss]
+    transition: fade
+    preview-links: auto
+    width: 1280
+    height: 720
+    title-slide-attributes: 
+      data-background-gradient: "linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%)"
+---
+
+# Hello!
+
+<center>
+
+<img src="https://github.com/juliasilge.png" style="border-radius: 50%;" width="300px"/>
+
+[{{< fa brands github >}} \@juliasilge](https://github.com/juliasilge)
+
+[{{< fa brands bluesky >}} \@juliasilge.com](https://bsky.app/profile/juliasilge.com)
+
+[{{< fa brands youtube >}} youtube.com/juliasilge](https://www.youtube.com/juliasilge)
+
+[{{< fa link >}} juliasilge.com](https://juliasilge.com/)
+
+</center>
+
+## Who are you?
+
+-   You know some Python + Markdown
+
+-   You have worked in VS Code and/or Jupyter Lab
+
+-   You want to learn about Quarto!
+
+## Join our workspace on GitHub Codespaces
+
+[{{< fa cloud >}} github.com/juliasilge/cippcd-2025](https://github.com/juliasilge/cippcd-2025)
+
+<br>
+
+Or alternatively, set yourself up to work locally:
+
+- Install Python (perhaps using [pyenv](https://github.com/pyenv/pyenv))
+- Install [Quarto](https://quarto.org/docs/get-started/)
+- Install VS Code and the Quarto and Jupyter extensions (or [Positron](https://positron.posit.co/download)!)
+- Clone the repo
+- Install the Python packages from `requirements.txt`
+
+# What is Quarto? {background-gradient="linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%)"}
+
+## Quarto is...
+
+...an innovative, open-source scientific and technical publishing system compatible with Jupyter notebooks and all your favorite plain text markdown editors
+
+![Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](../images/horst-quarto-schematic.png){fig-alt="A schematic representing the multi-language input (e.g. Python, R, Observable, Julia) and multi-format output (e.g. PDF, html, Word documents, and more) versatility of Quarto." fig-align="center"}
+
+## With Quarto...
+
+you can **weave** together **narrative** and **code** to produce elegantly formatted output as documents, web pages, blog posts, books and more, with:
+
+::: incremental
+-   **consistent** implementation of attractive and handy features across outputs: tabsets, code-folding, syntax highlighting, etc.
+-   defaults that meet accessibility guidelines as well as features that enable good practices for producing **accessible** documents
+-   native **multi-lingual** support for multiple languages like Python, R, Julia, Observable, and more via the Jupyter engine for executable code chunks
+:::
+
+## A tour of Quarto
+
+Sit back and enjoy! Or follow along with `hello-penguins.qmd`.
+
+::: {.callout-tip icon=false}
+
+## Activity
+
+-   Running individual cells
+-   Rendering a document
+-   Editing with source editor and visual editor
+-   Inserting images and lightbox effect
+-   Inserting tables
+-   Customizing formats: `pdf`, `docx`, `revealjs`
+-   Customizing format options:  `code-fold`, `toc`
+-   Code cells: labels, alt-text, execution options (`echo`, `warning`)
+-   Cross referencing figures and tables, with and without the visual editor
+-   Converting between Jupyter Notebooks and plain text markdown documents
+:::
+
+# How it works {background-gradient="linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%)"}
+
+## Revisit: What is Quarto? {.smaller}
+
+Quarto is a command line interface (**CLI**) that renders plain text formats (`.qmd`, `.rmd`, `.md`) OR mixed formats (`.ipynb`/Jupyter notebook) into static PDF/Word/HTML reports, books, websites, presentations and more.
+
+. . .
+
+```bash
+Usage:   quarto
+Version: 1.6.42
+
+Description:
+
+  Quarto CLI
+
+Options:
+
+  -h, --help     - Show this help.                            
+  -V, --version  - Show the version number for this program.  
+
+Commands:
+
+  render     [input] [args...]     - Render files or projects to various document types.
+  preview    [file] [args...]      - Render and preview a document or website project.  
+  serve      [input]               - Serve a Shiny interactive document.                
+  create     [type] [commands...]  - Create a Quarto project or extension               
+  use        <type> [target]       - Automate document or project setup tasks.          
+  add        <extension>           - Add an extension to this folder or project         
+  update     [target...]           - Updates an extension or global dependency.         
+  remove     [target...]           - Removes an extension.                              
+  convert    <input>               - Convert documents to alternate representations.    
+  pandoc     [args...]             - Run the version of Pandoc embedded within Quarto.  
+  typst      [args...]             - Run the version of Typst embedded within Quarto.   
+  run        [script] [args...]    - Run a TypeScript, R, Python, or Lua script.        
+  install    [target...]           - Installs a global dependency (TinyTex or Chromium).
+  uninstall  [tool]                - Removes an extension.                              
+  tools                            - Display the status of Quarto installed dependencies
+  publish    [provider] [path]     - Publish a document or project to a provider.       
+  check      [target]              - Verify correct functioning of Quarto installation. 
+  help       [command]             - Show this help or the help of a sub-command.
+```
+
+## Under the hood
+
+![](../images/ipynb-how-it-works.png){fig-align="center"}
+
+::: incremental
+-   `jupyter` evaluates Python code and returns a `.md` file along with the evaluated code
+-   Quarto applies Lua filters + CSS/LaTeX which is then evaluated alongside the `.md` file by Pandoc and converted to a final output format
+:::
+
+## Under the hood
+
+![](../images/quarto-how-it-works.png){fig-align="center"}
+
+::: incremental
+-   `jupyter` or `knitr` evaluates Python, Julia, R, or Observable code and returns a `.md` file along with the evaluated code
+-   Quarto applies Lua filters + CSS/LaTeX which is then evaluated alongside the `.md` file by Pandoc and converted to a final output format
+:::
+
+
+## From the comfort of your own home
+
+::: r-stack
+![](https://quarto.org/docs/tools/images/jupyterlab-preview.png){.fragment fig-alt="A screenshot of a Quarto document rendered inside JupyterLab" height="600"}
+
+![](https://quarto.org/docs/computations/images/python-vscode.png){.fragment fig-alt="A screenshot of a Quarto document rendered inside VSCode" height="600"}
+
+![](https://quarto.org/docs/tools/images/rstudio-preview.png){.fragment fig-alt="A screenshot of a Quarto document rendered inside RStudio" height="600"}
+
+![](../images/positron.png){.fragment fig-alt="A screenshot of a Quarto document rendered inside Positron" height="600"}
+:::
+
+## Render and preview
+
+**in the Terminal** in VS Code, Positron, or JupyterLab
+
+Render to output formats:
+
+```{bash}
+# ipynb notebook
+quarto render notebook.ipynb
+quarto render notebook.ipynb --to docx
+
+# plain text qmd
+quarto render notebook.qmd 
+quarto render notebook.qmd --to pdf
+```
+
+Live preview server (re-render on save):
+
+```{bash}
+# ipynb notebook
+quarto preview notebook.ipynb
+quarto preview notebook.ipynb --to docx
+
+# plain text qmd
+quarto preview notebook.qmd 
+quarto preview notebook.qmd --to pdf
+```
+
+## Render and preview
+
+**in the Editor** in VS Code or Positron
+
+-   Install and enable the Quarto extension
+
+-   Clicking on Preview or <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>K</kbd>
+
+# Quarto formats {background-gradient="linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%)"}
+
+## One install, "Batteries included"
+
+-   Quarto comes **"batteries included"** straight out of the box:
+
+    -   HTML reports and websites
+
+    -   PDF reports
+
+    -   MS Office (Word, Powerpoint)
+
+    -   Presentations (Powerpoint, Beamer, `revealjs`)
+
+    -   Books
+
+    -   Manuscripts
+
+    -   Beyond! 🚀
+
+. . .
+
+-   Any language, *exact* same approach and syntax
+
+## Many Quarto formats {.smaller}
+
+| Feature | Quarto |
+|--------------------------|----------------------------------------------|
+| Basic Formats | [html](https://quarto.org/docs/output-formats/html-basics.html), [pdf](https://quarto.org/docs/output-formats/pdf-basics.html), [docx](https://quarto.org/docs/output-formats/ms-word.html), [typst](https://quarto.org/docs/output-formats/typst.html) |
+| Beamer | [beamer](https://quarto.org/docs/presentations/beamer.html) |
+| PowerPoint | [pptx](https://quarto.org/docs/presentations/powerpoint.html) |
+| HTML Slides | [revealjs](https://quarto.org/docs/presentations/revealjs/) |
+| Advanced Layout | [Quarto Article Layout](https://quarto.org/docs/authoring/article-layout.html) |
+| Cross References | [Quarto Crossrefs](https://quarto.org/docs/authoring/cross-references.html) |
+| Websites & Blogs | [Quarto Websites](https://quarto.org/docs/websites/), [Quarto Blogs](https://quarto.org/docs/websites/website-blog.html) |
+| Books | [Quarto Books](https://quarto.org/docs/books/) |
+| Interactivity | [Quarto Interactive Documents](https://quarto.org/docs/interactive/shiny/) |
+| Journal Articles | [Journal Articles](https://quarto.org/docs/journals/index.html) |
+| Dashboards | [Quarto Dashboards](https://quarto.org/docs/dashboards/) |
+
+: {tbl-colwidths="\[25,75\]"}
+
+## Your turn
+
+::: {.callout-note icon=false}
+
+## Activity
+
+In VS Code, open the `hello-penquins.qmd` file. Render the document to HTML.
+
+-   Add an `author` field in the YAML and add your name.
+
+-   Add some text and style it with bold, italics, etc, using the source editor as well as the visual editor. 
+
+-   Modify the figure to add units to the axis labels: **g**rams for body weight and **mm** (milimeters) for flipper length. Render or preview the document and make sure the changes are reflected in the HTML output.
+
+-   Change the html theme to `sketchy`. See <https://quarto.org/docs/output-formats/html-themes.html> for documentation on HTML theming.
+:::
+
+{{< countdown minutes=5 >}}
+
+## Wrap up
+
+Where does the name "Quarto" come from?
+
+. . .
+
+<iframe src="https://en.wikipedia.org/wiki/Quarto" title="Quarto on Wikipedia" width="100%" height="500" style="border:2px solid #123233;"></iframe>
+
+::: footer
+Source: <https://en.wikipedia.org/wiki/Quarto>
+:::
+
+## Learn more
+
+[quarto.org/docs/guide](https://quarto.org/docs/guide/) \> Authoring & Computations
+
+<iframe src="https://quarto.org/docs/guide" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Guide"></iframe>
+
+# Thanks!
+
+<center>
+
+<img src="https://github.com/juliasilge.png" style="border-radius: 50%;" width="300px"/>
+
+[{{< fa brands github >}} \@juliasilge](https://github.com/juliasilge)
+
+[{{< fa brands bluesky >}} \@juliasilge.com](https://bsky.app/profile/juliasilge.com)
+
+[{{< fa brands youtube >}} youtube.com/juliasilge](https://www.youtube.com/juliasilge)
+
+[{{< fa link >}} juliasilge.com](https://juliasilge.com/)
+
+</center>
+
+::: footer
+Slides created with [Quarto](https://quarto.org/)
+:::
