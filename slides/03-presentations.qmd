@@ -1,0 +1,125 @@
+---
+title: "Presentations"
+subtitle: "CIPPCD 2025: Dynamic Reproducible<br>Documents for Public Policy with Quarto"
+author: "Julia Silge"
+institute: "Posit PBC"
+footer: "<https://juliasilge.github.io/cippcd-2025/>"
+highlight-style: atom-one
+format:
+  revealjs: 
+    theme: [default, custom.scss]
+    transition: fade
+    preview-links: auto
+    width: 1280
+    height: 720
+    title-slide-attributes: 
+      data-background-gradient: "linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%)"
+---
+
+# Hello!
+
+<center>
+
+<img src="https://github.com/juliasilge.png" style="border-radius: 50%;" width="300px"/>
+
+[{{< fa brands github >}} \@juliasilge](https://github.com/juliasilge)
+
+[{{< fa brands bluesky >}} \@juliasilge.com](https://bsky.app/profile/juliasilge.com)
+
+[{{< fa brands youtube >}} youtube.com/juliasilge](https://www.youtube.com/juliasilge)
+
+[{{< fa link >}} juliasilge.com](https://juliasilge.com/)
+
+</center>
+
+# Anatomy of a Quarto presentation {background-gradient="linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%)"}
+
+## Components
+
+1.  Metadata: YAML
+
+2.  Text: Markdown
+
+3.  Code: Executed via `jupyter` (or `knitr`)
+
+. . .
+
+**Weave it all together**, and you have a beautiful, functional slide deck!
+
+## Our turn
+
+::: {.callout-note icon=false}
+
+## Activity
+
+Let's build a presentation together from `hello-penguins-slides.qmd` and showcase the following features of Quarto presentations:
+
+-   Hierarchy, headers, and document outline
+-   Incremental lists
+-   Columns
+-   Code, output location, code highlighting
+-   Logo and footer
+-   Making things fit on a slide
+-   Multiplex
+-   Publishing your presentation to Quarto Pub
+:::
+
+## Your turn
+
+::: {.callout-note icon=false}
+
+## Activity
+
+Pick up where we left off and:
+
+-   Change the [transition style](https://quarto.org/docs/presentations/revealjs/advanced.html#slide-transitions) between slides
+-   Change the [slide size](https://quarto.org/docs/presentations/revealjs/advanced.html#presentation-size)
+-   Add [slide numbers](https://quarto.org/docs/presentations/revealjs/presenting.html#slide-numbers)
+:::
+
+{{< countdown minutes=5 >}}
+
+## Our turn
+
+::: {.callout-note icon=false}
+
+## Activity
+
+Let's continue building our a presentation together from `hello-penguins-slides.qmd` and showcase the fragments with `.fragment` and `fragment-index=n`.
+:::
+
+# Wrap up {background-gradient="linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%)"}
+
+## Quarto presentation formats
+
+-   [`revealjs`](https://quarto.org/docs/presentations/revealjs)
+
+-   `beamer` for LaTeX slides
+
+-   PowerPoint for when you *have to* collaborate via MS Office
+
+## Learn more
+
+[quarto.org/docs/presentations](https://quarto.org/docs/presentations/%3E)
+
+<iframe src="https://quarto.org/docs/presentations" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Presentations"></iframe>
+
+# Thanks!
+
+<center>
+
+<img src="https://github.com/juliasilge.png" style="border-radius: 50%;" width="300px"/>
+
+[{{< fa brands github >}} \@juliasilge](https://github.com/juliasilge)
+
+[{{< fa brands bluesky >}} \@juliasilge.com](https://bsky.app/profile/juliasilge.com)
+
+[{{< fa brands youtube >}} youtube.com/juliasilge](https://www.youtube.com/juliasilge)
+
+[{{< fa link >}} juliasilge.com](https://juliasilge.com/)
+
+</center>
+
+::: footer
+Slides created with [Quarto](https://quarto.org/)
+:::

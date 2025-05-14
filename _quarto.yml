@@ -17,7 +17,7 @@ website:
   repo-actions: [edit, issue]
   search: false
   navbar:
-    background: "#e9defa"
+    background: "#D6CADD"
     pinned: true
     right:
       - text: Learn more

@@ -1,5 +1,208 @@
 [
   {
+    "objectID": "slides/03-presentations.html#components",
+    "href": "slides/03-presentations.html#components",
+    "title": "Presentations",
+    "section": "Components",
+    "text": "Components\n\nMetadata: YAML\nText: Markdown\nCode: Executed via jupyter (or knitr)\n\n\nWeave it all together, and you have a beautiful, functional slide deck!"
+  },
+  {
+    "objectID": "slides/03-presentations.html#our-turn",
+    "href": "slides/03-presentations.html#our-turn",
+    "title": "Presentations",
+    "section": "Our turn",
+    "text": "Our turn\n\n\n\nActivity\n\n\nLet’s build a presentation together from hello-penguins-slides.qmd and showcase the following features of Quarto presentations:\n\nHierarchy, headers, and document outline\nIncremental lists\nColumns\nCode, output location, code highlighting\nLogo and footer\nMaking things fit on a slide\nMultiplex\nPublishing your presentation to Quarto Pub"
+  },
+  {
+    "objectID": "slides/03-presentations.html#your-turn",
+    "href": "slides/03-presentations.html#your-turn",
+    "title": "Presentations",
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\nActivity\n\n\nPick up where we left off and:\n\nChange the transition style between slides\nChange the slide size\nAdd slide numbers\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
+  },
+  {
+    "objectID": "slides/03-presentations.html#our-turn-1",
+    "href": "slides/03-presentations.html#our-turn-1",
+    "title": "Presentations",
+    "section": "Our turn",
+    "text": "Our turn\n\n\n\nActivity\n\n\nLet’s continue building our a presentation together from hello-penguins-slides.qmd and showcase the fragments with .fragment and fragment-index=n."
+  },
+  {
+    "objectID": "slides/03-presentations.html#quarto-presentation-formats",
+    "href": "slides/03-presentations.html#quarto-presentation-formats",
+    "title": "Presentations",
+    "section": "Quarto presentation formats",
+    "text": "Quarto presentation formats\n\nrevealjs\nbeamer for LaTeX slides\nPowerPoint for when you have to collaborate via MS Office"
+  },
+  {
+    "objectID": "slides/03-presentations.html#learn-more",
+    "href": "slides/03-presentations.html#learn-more",
+    "title": "Presentations",
+    "section": "Learn more",
+    "text": "Learn more\nquarto.org/docs/presentations"
+  },
+  {
+    "objectID": "slides/01-hello-quarto.html#who-are-you",
+    "href": "slides/01-hello-quarto.html#who-are-you",
+    "title": "Hello, Quarto!",
+    "section": "Who are you?",
+    "text": "Who are you?\n\nYou know some Python + Markdown\nYou have worked in VS Code and/or Jupyter Lab\nYou want to learn about Quarto!"
+  },
+  {
+    "objectID": "slides/01-hello-quarto.html#join-our-workspace-on-github-codespaces",
+    "href": "slides/01-hello-quarto.html#join-our-workspace-on-github-codespaces",
+    "title": "Hello, Quarto!",
+    "section": "Join our workspace on GitHub Codespaces",
+    "text": "Join our workspace on GitHub Codespaces\n github.com/juliasilge/cippcd-2025\n\nOr alternatively, set yourself up to work locally:\n\nInstall Python (perhaps using pyenv)\nInstall Quarto\nInstall VS Code and the Quarto and Jupyter extensions (or Positron!)\nClone the repo\nInstall the Python packages from requirements.txt"
+  },
+  {
+    "objectID": "slides/01-hello-quarto.html#quarto-is",
+    "href": "slides/01-hello-quarto.html#quarto-is",
+    "title": "Hello, Quarto!",
+    "section": "Quarto is…",
+    "text": "Quarto is…\n…an innovative, open-source scientific and technical publishing system compatible with Jupyter notebooks and all your favorite plain text markdown editors\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "slides/01-hello-quarto.html#with-quarto",
+    "href": "slides/01-hello-quarto.html#with-quarto",
+    "title": "Hello, Quarto!",
+    "section": "With Quarto…",
+    "text": "With Quarto…\nyou can weave together narrative and code to produce elegantly formatted output as documents, web pages, blog posts, books and more, with:\n\n\nconsistent implementation of attractive and handy features across outputs: tabsets, code-folding, syntax highlighting, etc.\ndefaults that meet accessibility guidelines as well as features that enable good practices for producing accessible documents\nnative multi-lingual support for multiple languages like Python, R, Julia, Observable, and more via the Jupyter engine for executable code chunks"
+  },
+  {
+    "objectID": "slides/01-hello-quarto.html#a-tour-of-quarto",
+    "href": "slides/01-hello-quarto.html#a-tour-of-quarto",
+    "title": "Hello, Quarto!",
+    "section": "A tour of Quarto",
+    "text": "A tour of Quarto\nSit back and enjoy! Or follow along with hello-penguins.qmd.\n\n\n\nActivity\n\n\n\nRunning individual cells\nRendering a document\nEditing with source editor and visual editor\nInserting images and lightbox effect\nInserting tables\nCustomizing formats: pdf, docx, revealjs\nCustomizing format options: code-fold, toc\nCode cells: labels, alt-text, execution options (echo, warning)\nCross referencing figures and tables, with and without the visual editor\nConverting between Jupyter Notebooks and plain text markdown documents"
+  },
+  {
+    "objectID": "slides/01-hello-quarto.html#revisit-what-is-quarto",
+    "href": "slides/01-hello-quarto.html#revisit-what-is-quarto",
+    "title": "Hello, Quarto!",
+    "section": "Revisit: What is Quarto?",
+    "text": "Revisit: What is Quarto?\nQuarto is a command line interface (CLI) that renders plain text formats (.qmd, .rmd, .md) OR mixed formats (.ipynb/Jupyter notebook) into static PDF/Word/HTML reports, books, websites, presentations and more.\n\nUsage:   quarto\nVersion: 1.6.42\n\nDescription:\n\n  Quarto CLI\n\nOptions:\n\n  -h, --help     - Show this help.                            \n  -V, --version  - Show the version number for this program.  \n\nCommands:\n\n  render     [input] [args...]     - Render files or projects to various document types.\n  preview    [file] [args...]      - Render and preview a document or website project.  \n  serve      [input]               - Serve a Shiny interactive document.                \n  create     [type] [commands...]  - Create a Quarto project or extension               \n  use        &lt;type&gt; [target]       - Automate document or project setup tasks.          \n  add        &lt;extension&gt;           - Add an extension to this folder or project         \n  update     [target...]           - Updates an extension or global dependency.         \n  remove     [target...]           - Removes an extension.                              \n  convert    &lt;input&gt;               - Convert documents to alternate representations.    \n  pandoc     [args...]             - Run the version of Pandoc embedded within Quarto.  \n  typst      [args...]             - Run the version of Typst embedded within Quarto.   \n  run        [script] [args...]    - Run a TypeScript, R, Python, or Lua script.        \n  install    [target...]           - Installs a global dependency (TinyTex or Chromium).\n  uninstall  [tool]                - Removes an extension.                              \n  tools                            - Display the status of Quarto installed dependencies\n  publish    [provider] [path]     - Publish a document or project to a provider.       \n  check      [target]              - Verify correct functioning of Quarto installation. \n  help       [command]             - Show this help or the help of a sub-command."
+  },
+  {
+    "objectID": "slides/01-hello-quarto.html#under-the-hood",
+    "href": "slides/01-hello-quarto.html#under-the-hood",
+    "title": "Hello, Quarto!",
+    "section": "Under the hood",
+    "text": "Under the hood\n\n\n\njupyter evaluates Python code and returns a .md file along with the evaluated code\nQuarto applies Lua filters + CSS/LaTeX which is then evaluated alongside the .md file by Pandoc and converted to a final output format"
+  },
+  {
+    "objectID": "slides/01-hello-quarto.html#under-the-hood-1",
+    "href": "slides/01-hello-quarto.html#under-the-hood-1",
+    "title": "Hello, Quarto!",
+    "section": "Under the hood",
+    "text": "Under the hood\n\n\n\njupyter or knitr evaluates Python, Julia, R, or Observable code and returns a .md file along with the evaluated code\nQuarto applies Lua filters + CSS/LaTeX which is then evaluated alongside the .md file by Pandoc and converted to a final output format"
+  },
+  {
+    "objectID": "slides/01-hello-quarto.html#from-the-comfort-of-your-own-home",
+    "href": "slides/01-hello-quarto.html#from-the-comfort-of-your-own-home",
+    "title": "Hello, Quarto!",
+    "section": "From the comfort of your own home",
+    "text": "From the comfort of your own home"
+  },
+  {
+    "objectID": "slides/01-hello-quarto.html#render-and-preview",
+    "href": "slides/01-hello-quarto.html#render-and-preview",
+    "title": "Hello, Quarto!",
+    "section": "Render and preview",
+    "text": "Render and preview\nin the Terminal in VS Code, Positron, or JupyterLab\nRender to output formats:\n# ipynb notebook\nquarto render notebook.ipynb\nquarto render notebook.ipynb --to docx\n\n# plain text qmd\nquarto render notebook.qmd \nquarto render notebook.qmd --to pdf\nLive preview server (re-render on save):\n# ipynb notebook\nquarto preview notebook.ipynb\nquarto preview notebook.ipynb --to docx\n\n# plain text qmd\nquarto preview notebook.qmd \nquarto preview notebook.qmd --to pdf"
+  },
+  {
+    "objectID": "slides/01-hello-quarto.html#render-and-preview-1",
+    "href": "slides/01-hello-quarto.html#render-and-preview-1",
+    "title": "Hello, Quarto!",
+    "section": "Render and preview",
+    "text": "Render and preview\nin the Editor in VS Code or Positron\n\nInstall and enable the Quarto extension\nClicking on Preview or Cmd + Shift + K"
+  },
+  {
+    "objectID": "slides/01-hello-quarto.html#one-install-batteries-included",
+    "href": "slides/01-hello-quarto.html#one-install-batteries-included",
+    "title": "Hello, Quarto!",
+    "section": "One install, “Batteries included”",
+    "text": "One install, “Batteries included”\n\nQuarto comes “batteries included” straight out of the box:\n\nHTML reports and websites\nPDF reports\nMS Office (Word, Powerpoint)\nPresentations (Powerpoint, Beamer, revealjs)\nBooks\nManuscripts\nBeyond! 🚀\n\n\n\n\nAny language, exact same approach and syntax"
+  },
+  {
+    "objectID": "slides/01-hello-quarto.html#many-quarto-formats",
+    "href": "slides/01-hello-quarto.html#many-quarto-formats",
+    "title": "Hello, Quarto!",
+    "section": "Many Quarto formats",
+    "text": "Many Quarto formats\n\n\n\n\n\n\n\nFeature\nQuarto\n\n\n\n\nBasic Formats\nhtml, pdf, docx, typst\n\n\nBeamer\nbeamer\n\n\nPowerPoint\npptx\n\n\nHTML Slides\nrevealjs\n\n\nAdvanced Layout\nQuarto Article Layout\n\n\nCross References\nQuarto Crossrefs\n\n\nWebsites & Blogs\nQuarto Websites, Quarto Blogs\n\n\nBooks\nQuarto Books\n\n\nInteractivity\nQuarto Interactive Documents\n\n\nJournal Articles\nJournal Articles\n\n\nDashboards\nQuarto Dashboards"
+  },
+  {
+    "objectID": "slides/01-hello-quarto.html#your-turn",
+    "href": "slides/01-hello-quarto.html#your-turn",
+    "title": "Hello, Quarto!",
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\nActivity\n\n\nIn VS Code, open the hello-penquins.qmd file. Render the document to HTML.\n\nAdd an author field in the YAML and add your name.\nAdd some text and style it with bold, italics, etc, using the source editor as well as the visual editor.\nModify the figure to add units to the axis labels: grams for body weight and mm (milimeters) for flipper length. Render or preview the document and make sure the changes are reflected in the HTML output.\nChange the html theme to sketchy. See https://quarto.org/docs/output-formats/html-themes.html for documentation on HTML theming.\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
+  },
+  {
+    "objectID": "slides/01-hello-quarto.html#wrap-up",
+    "href": "slides/01-hello-quarto.html#wrap-up",
+    "title": "Hello, Quarto!",
+    "section": "Wrap up",
+    "text": "Wrap up\nWhere does the name “Quarto” come from?\n\n\n\n\nSource: https://en.wikipedia.org/wiki/Quarto"
+  },
+  {
+    "objectID": "slides/01-hello-quarto.html#learn-more",
+    "href": "slides/01-hello-quarto.html#learn-more",
+    "title": "Hello, Quarto!",
+    "section": "Learn more",
+    "text": "Learn more\nquarto.org/docs/guide &gt; Authoring & Computations"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Dynamic Reproducible Documents for Public Policy with Quarto",
+    "section": "",
+    "text": "These are the materials for a workshop on Quarto by Julia Silge at CIPPCD 2025 in Aveiro, Portugal on 17 May 2025. Quarto is an innovative, open-source scientific and technical publishing system compatible with Jupyter Notebooks and plain text markdown documents. Quarto provides data scientists with a seamless way to publish their work in a high-quality format that is reproducible, accessible, and shareable. With Quarto, data scientists working in public policy can turn their Jupyter Notebooks and literate plain text markdown documents into professional-looking publications in various formats. This workshop will demonstrate how Quarto enables data scientists to turn their work products into professional, high-quality documents, slides, websites, and other shareable artifacts.\nThis workshop is based on the materials developed by Mine Çetinkaya-Rundel for SciPy 2024."
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Dynamic Reproducible Documents for Public Policy with Quarto",
+    "section": "",
+    "text": "These are the materials for a workshop on Quarto by Julia Silge at CIPPCD 2025 in Aveiro, Portugal on 17 May 2025. Quarto is an innovative, open-source scientific and technical publishing system compatible with Jupyter Notebooks and plain text markdown documents. Quarto provides data scientists with a seamless way to publish their work in a high-quality format that is reproducible, accessible, and shareable. With Quarto, data scientists working in public policy can turn their Jupyter Notebooks and literate plain text markdown documents into professional-looking publications in various formats. This workshop will demonstrate how Quarto enables data scientists to turn their work products into professional, high-quality documents, slides, websites, and other shareable artifacts.\nThis workshop is based on the materials developed by Mine Çetinkaya-Rundel for SciPy 2024."
+  },
+  {
+    "objectID": "index.html#learning-objectives",
+    "href": "index.html#learning-objectives",
+    "title": "Dynamic Reproducible Documents for Public Policy with Quarto",
+    "section": "Learning objectives:",
+    "text": "Learning objectives:\nAt the end of this workshop, participants will understand how to:\n\nAuthor documents in plain text markdown or Jupyter notebooks with equations, citations, crossrefs, figure panels, callouts, and advanced layouts.\nLearn how to author content in IPython/Jupyter and the Quarto VS Code extension.\nLeverage Quarto for creating different types of publications, including webpages/blogs, slides, dashboards, books, websites, and scientific manuscripts.\nCustomize execution and content with a rich array of code cell options, filters, and extensions.\nHost websites and publications on platforms such as GitHub Pages, QuartoPub, and Netlify."
+  },
+  {
+    "objectID": "index.html#preparation",
+    "href": "index.html#preparation",
+    "title": "Dynamic Reproducible Documents for Public Policy with Quarto",
+    "section": "Preparation",
+    "text": "Preparation\nPlease create a GitHub account ahead of time, to use a cloud workspace via Codespaces during the workshop. The free tier will be adequate for our workshop. Do remember to bring your laptop to work along!\nAlternatively, if you prefer to work locally, please tune into the workshop with a computer that has the following installed (all available for free):\n\nA recent version of Python (perhaps installed using pyenv)\nQuarto\nInstall VS Code and the Quarto and Jupyter extensions (or Positron!)\nClone the repo\nInstall the Python packages from requirements.txt"
+  },
+  {
+    "objectID": "index.html#slides",
+    "href": "index.html#slides",
+    "title": "Dynamic Reproducible Documents for Public Policy with Quarto",
+    "section": "Slides",
+    "text": "Slides\n\n01: Hello, Quarto!\n02: Documents\n03: Presentations\n04: Dashboards\n05: Websites and blogs\n06: Books"
+  },
+  {
+    "objectID": "index.html#code",
+    "href": "index.html#code",
+    "title": "Dynamic Reproducible Documents for Public Policy with Quarto",
+    "section": "Code",
+    "text": "Code\nQuarto files for working along are available on GitHub."
+  },
+  {
+    "objectID": "index.html#instructor-bio",
+    "href": "index.html#instructor-bio",
+    "title": "Dynamic Reproducible Documents for Public Policy with Quarto",
+    "section": "Instructor bio",
+    "text": "Instructor bio\nJulia Silge is a data scientist and engineering manager at Posit PBC (formerly RStudio), where she leads a team of developers building fluent, cohesive open source software for data science in Python and R. She is an author, an international keynote speaker, and a real-world practitioner focusing on data analysis and machine learning. Julia loves text analysis, making beautiful charts, and communicating about technical topics with diverse audiences."
+  },
+  {
     "objectID": "slides/02-documents.html#components",
     "href": "slides/02-documents.html#components",
     "title": "Documents",
@@ -368,167 +571,6 @@
     "href": "slides/02-documents.html#learn-more",
     "title": "Documents",
     "section": "Learn more",
-    "text": "Learn more\n\nquarto.org/docs/guide &gt; Documents"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Dynamic Reproducible Documents for Public Policy with Quarto",
-    "section": "",
-    "text": "These are the materials for a workshop on Quarto by Julia Silge at CIPPCD 2025 in Aveiro, Portugal on 17 May 2025. Quarto is an innovative, open-source scientific and technical publishing system compatible with Jupyter Notebooks and plain text markdown documents. Quarto provides data scientists with a seamless way to publish their work in a high-quality format that is reproducible, accessible, and shareable. With Quarto, data scientists working in public policy can turn their Jupyter Notebooks and literate plain text markdown documents into professional-looking publications in various formats. This workshop will demonstrate how Quarto enables data scientists to turn their work products into professional, high-quality documents, slides, websites, and other shareable artifacts.\nThis workshop is based on the materials developed by Mine Çetinkaya-Rundel for SciPy 2024."
-  },
-  {
-    "objectID": "index.html#welcome",
-    "href": "index.html#welcome",
-    "title": "Dynamic Reproducible Documents for Public Policy with Quarto",
-    "section": "",
-    "text": "These are the materials for a workshop on Quarto by Julia Silge at CIPPCD 2025 in Aveiro, Portugal on 17 May 2025. Quarto is an innovative, open-source scientific and technical publishing system compatible with Jupyter Notebooks and plain text markdown documents. Quarto provides data scientists with a seamless way to publish their work in a high-quality format that is reproducible, accessible, and shareable. With Quarto, data scientists working in public policy can turn their Jupyter Notebooks and literate plain text markdown documents into professional-looking publications in various formats. This workshop will demonstrate how Quarto enables data scientists to turn their work products into professional, high-quality documents, slides, websites, and other shareable artifacts.\nThis workshop is based on the materials developed by Mine Çetinkaya-Rundel for SciPy 2024."
-  },
-  {
-    "objectID": "index.html#learning-objectives",
-    "href": "index.html#learning-objectives",
-    "title": "Dynamic Reproducible Documents for Public Policy with Quarto",
-    "section": "Learning objectives:",
-    "text": "Learning objectives:\nAt the end of this workshop, participants will understand how to:\n\nAuthor documents in plain text markdown or Jupyter notebooks with equations, citations, crossrefs, figure panels, callouts, and advanced layouts.\nLearn how to author content in IPython/Jupyter and the Quarto VS Code extension.\nLeverage Quarto for creating different types of publications, including webpages/blogs, slides, dashboards, books, websites, and scientific manuscripts.\nCustomize execution and content with a rich array of code cell options, filters, and extensions.\nHost websites and publications on platforms such as GitHub Pages, QuartoPub, and Netlify."
-  },
-  {
-    "objectID": "index.html#preparation",
-    "href": "index.html#preparation",
-    "title": "Dynamic Reproducible Documents for Public Policy with Quarto",
-    "section": "Preparation",
-    "text": "Preparation\nPlease create a GitHub account ahead of time, to use a cloud workspace via Codespaces during the workshop. The free tier will be adequate for our workshop. Do remember to bring your laptop to work along!\nAlternatively, if you prefer to work locally, please tune into the workshop with a computer that has the following installed (all available for free):\n\nA recent version of Python (perhaps installed using pyenv)\nQuarto\nInstall VS Code and the Quarto and Jupyter extensions (or Positron!)\nClone the repo\nInstall the Python packages from requirements.txt"
-  },
-  {
-    "objectID": "index.html#slides",
-    "href": "index.html#slides",
-    "title": "Dynamic Reproducible Documents for Public Policy with Quarto",
-    "section": "Slides",
-    "text": "Slides\n\n01: Hello, Quarto!\n02: Documents\n03: Presentations\n04: Dashboards\n05: Websites and blogs\n06: Books"
-  },
-  {
-    "objectID": "index.html#code",
-    "href": "index.html#code",
-    "title": "Dynamic Reproducible Documents for Public Policy with Quarto",
-    "section": "Code",
-    "text": "Code\nQuarto files for working along are available on GitHub."
-  },
-  {
-    "objectID": "index.html#instructor-bio",
-    "href": "index.html#instructor-bio",
-    "title": "Dynamic Reproducible Documents for Public Policy with Quarto",
-    "section": "Instructor bio",
-    "text": "Instructor bio\nJulia Silge is a data scientist and engineering manager at Posit PBC (formerly RStudio), where she leads a team of developers building fluent, cohesive open source software for data science in Python and R. She is an author, an international keynote speaker, and a real-world practitioner focusing on data analysis and machine learning. Julia loves text analysis, making beautiful charts, and communicating about technical topics with diverse audiences."
-  },
-  {
-    "objectID": "slides/01-hello-quarto.html#who-are-you",
-    "href": "slides/01-hello-quarto.html#who-are-you",
-    "title": "Hello, Quarto!",
-    "section": "Who are you?",
-    "text": "Who are you?\n\nYou know some Python + Markdown\nYou have worked in VS Code and/or Jupyter Lab\nYou want to learn about Quarto!"
-  },
-  {
-    "objectID": "slides/01-hello-quarto.html#join-our-workspace-on-github-codespaces",
-    "href": "slides/01-hello-quarto.html#join-our-workspace-on-github-codespaces",
-    "title": "Hello, Quarto!",
-    "section": "Join our workspace on GitHub Codespaces",
-    "text": "Join our workspace on GitHub Codespaces\n github.com/juliasilge/cippcd-2025\n\nOr alternatively, set yourself up to work locally:\n\nInstall Python (perhaps using pyenv)\nInstall Quarto\nInstall VS Code and the Quarto and Jupyter extensions (or Positron!)\nClone the repo\nInstall the Python packages from requirements.txt"
-  },
-  {
-    "objectID": "slides/01-hello-quarto.html#quarto-is",
-    "href": "slides/01-hello-quarto.html#quarto-is",
-    "title": "Hello, Quarto!",
-    "section": "Quarto is…",
-    "text": "Quarto is…\n…an innovative, open-source scientific and technical publishing system compatible with Jupyter notebooks and all your favorite plain text markdown editors\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
-  },
-  {
-    "objectID": "slides/01-hello-quarto.html#with-quarto",
-    "href": "slides/01-hello-quarto.html#with-quarto",
-    "title": "Hello, Quarto!",
-    "section": "With Quarto…",
-    "text": "With Quarto…\nyou can weave together narrative and code to produce elegantly formatted output as documents, web pages, blog posts, books and more, with:\n\n\nconsistent implementation of attractive and handy features across outputs: tabsets, code-folding, syntax highlighting, etc.\ndefaults that meet accessibility guidelines as well as features that enable good practices for producing accessible documents\nnative multi-lingual support for multiple languages like Python, R, Julia, Observable, and more via the Jupyter engine for executable code chunks"
-  },
-  {
-    "objectID": "slides/01-hello-quarto.html#a-tour-of-quarto",
-    "href": "slides/01-hello-quarto.html#a-tour-of-quarto",
-    "title": "Hello, Quarto!",
-    "section": "A tour of Quarto",
-    "text": "A tour of Quarto\nSit back and enjoy! Or follow along with hello-penguins.qmd.\n\n\n\nActivity\n\n\n\nRunning individual cells\nRendering a document\nEditing with source editor and visual editor\nInserting images and lightbox effect\nInserting tables\nCustomizing formats: pdf, docx, revealjs\nCustomizing format options: code-fold, toc\nCode cells: labels, alt-text, execution options (echo, warning)\nCross referencing figures and tables, with and without the visual editor\nConverting between Jupyter Notebooks and plain text markdown documents"
-  },
-  {
-    "objectID": "slides/01-hello-quarto.html#revisit-what-is-quarto",
-    "href": "slides/01-hello-quarto.html#revisit-what-is-quarto",
-    "title": "Hello, Quarto!",
-    "section": "Revisit: What is Quarto?",
-    "text": "Revisit: What is Quarto?\nQuarto is a command line interface (CLI) that renders plain text formats (.qmd, .rmd, .md) OR mixed formats (.ipynb/Jupyter notebook) into static PDF/Word/HTML reports, books, websites, presentations and more.\n\nUsage:   quarto\nVersion: 1.6.42\n\nDescription:\n\n  Quarto CLI\n\nOptions:\n\n  -h, --help     - Show this help.                            \n  -V, --version  - Show the version number for this program.  \n\nCommands:\n\n  render     [input] [args...]     - Render files or projects to various document types.\n  preview    [file] [args...]      - Render and preview a document or website project.  \n  serve      [input]               - Serve a Shiny interactive document.                \n  create     [type] [commands...]  - Create a Quarto project or extension               \n  use        &lt;type&gt; [target]       - Automate document or project setup tasks.          \n  add        &lt;extension&gt;           - Add an extension to this folder or project         \n  update     [target...]           - Updates an extension or global dependency.         \n  remove     [target...]           - Removes an extension.                              \n  convert    &lt;input&gt;               - Convert documents to alternate representations.    \n  pandoc     [args...]             - Run the version of Pandoc embedded within Quarto.  \n  typst      [args...]             - Run the version of Typst embedded within Quarto.   \n  run        [script] [args...]    - Run a TypeScript, R, Python, or Lua script.        \n  install    [target...]           - Installs a global dependency (TinyTex or Chromium).\n  uninstall  [tool]                - Removes an extension.                              \n  tools                            - Display the status of Quarto installed dependencies\n  publish    [provider] [path]     - Publish a document or project to a provider.       \n  check      [target]              - Verify correct functioning of Quarto installation. \n  help       [command]             - Show this help or the help of a sub-command."
-  },
-  {
-    "objectID": "slides/01-hello-quarto.html#under-the-hood",
-    "href": "slides/01-hello-quarto.html#under-the-hood",
-    "title": "Hello, Quarto!",
-    "section": "Under the hood",
-    "text": "Under the hood\n\n\n\njupyter evaluates Python code and returns a .md file along with the evaluated code\nQuarto applies Lua filters + CSS/LaTeX which is then evaluated alongside the .md file by Pandoc and converted to a final output format"
-  },
-  {
-    "objectID": "slides/01-hello-quarto.html#under-the-hood-1",
-    "href": "slides/01-hello-quarto.html#under-the-hood-1",
-    "title": "Hello, Quarto!",
-    "section": "Under the hood",
-    "text": "Under the hood\n\n\n\njupyter or knitr evaluates Python, Julia, R, or Observable code and returns a .md file along with the evaluated code\nQuarto applies Lua filters + CSS/LaTeX which is then evaluated alongside the .md file by Pandoc and converted to a final output format"
-  },
-  {
-    "objectID": "slides/01-hello-quarto.html#from-the-comfort-of-your-own-home",
-    "href": "slides/01-hello-quarto.html#from-the-comfort-of-your-own-home",
-    "title": "Hello, Quarto!",
-    "section": "From the comfort of your own home",
-    "text": "From the comfort of your own home"
-  },
-  {
-    "objectID": "slides/01-hello-quarto.html#render-and-preview",
-    "href": "slides/01-hello-quarto.html#render-and-preview",
-    "title": "Hello, Quarto!",
-    "section": "Render and preview",
-    "text": "Render and preview\nin the Terminal in VS Code, Positron, or JupyterLab\nRender to output formats:\n# ipynb notebook\nquarto render notebook.ipynb\nquarto render notebook.ipynb --to docx\n\n# plain text qmd\nquarto render notebook.qmd \nquarto render notebook.qmd --to pdf\nLive preview server (re-render on save):\n# ipynb notebook\nquarto preview notebook.ipynb\nquarto preview notebook.ipynb --to docx\n\n# plain text qmd\nquarto preview notebook.qmd \nquarto preview notebook.qmd --to pdf"
-  },
-  {
-    "objectID": "slides/01-hello-quarto.html#render-and-preview-1",
-    "href": "slides/01-hello-quarto.html#render-and-preview-1",
-    "title": "Hello, Quarto!",
-    "section": "Render and preview",
-    "text": "Render and preview\nin the Editor in VS Code or Positron\n\nInstall and enable the Quarto extension\nClicking on Preview or Cmd + Shift + K"
-  },
-  {
-    "objectID": "slides/01-hello-quarto.html#one-install-batteries-included",
-    "href": "slides/01-hello-quarto.html#one-install-batteries-included",
-    "title": "Hello, Quarto!",
-    "section": "One install, “Batteries included”",
-    "text": "One install, “Batteries included”\n\nQuarto comes “batteries included” straight out of the box:\n\nHTML reports and websites\nPDF reports\nMS Office (Word, Powerpoint)\nPresentations (Powerpoint, Beamer, revealjs)\nBooks\nManuscripts\nBeyond! 🚀\n\n\n\n\nAny language, exact same approach and syntax"
-  },
-  {
-    "objectID": "slides/01-hello-quarto.html#many-quarto-formats",
-    "href": "slides/01-hello-quarto.html#many-quarto-formats",
-    "title": "Hello, Quarto!",
-    "section": "Many Quarto formats",
-    "text": "Many Quarto formats\n\n\n\n\n\n\n\nFeature\nQuarto\n\n\n\n\nBasic Formats\nhtml, pdf, docx, typst\n\n\nBeamer\nbeamer\n\n\nPowerPoint\npptx\n\n\nHTML Slides\nrevealjs\n\n\nAdvanced Layout\nQuarto Article Layout\n\n\nCross References\nQuarto Crossrefs\n\n\nWebsites & Blogs\nQuarto Websites, Quarto Blogs\n\n\nBooks\nQuarto Books\n\n\nInteractivity\nQuarto Interactive Documents\n\n\nJournal Articles\nJournal Articles\n\n\nDashboards\nQuarto Dashboards"
-  },
-  {
-    "objectID": "slides/01-hello-quarto.html#your-turn",
-    "href": "slides/01-hello-quarto.html#your-turn",
-    "title": "Hello, Quarto!",
-    "section": "Your turn",
-    "text": "Your turn\n\n\n\nActivity\n\n\nIn VS Code, open the hello-penquins.qmd file. Render the document to HTML.\n\nAdd an author field in the YAML and add your name.\nAdd some text and style it with bold, italics, etc, using the source editor as well as the visual editor.\nModify the figure to add units to the axis labels: grams for body weight and mm (milimeters) for flipper length. Render or preview the document and make sure the changes are reflected in the HTML output.\nChange the html theme to sketchy. See https://quarto.org/docs/output-formats/html-themes.html for documentation on HTML theming.\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
-  },
-  {
-    "objectID": "slides/01-hello-quarto.html#wrap-up",
-    "href": "slides/01-hello-quarto.html#wrap-up",
-    "title": "Hello, Quarto!",
-    "section": "Wrap up",
-    "text": "Wrap up\nWhere does the name “Quarto” come from?\n\n\n\n\nSource: https://en.wikipedia.org/wiki/Quarto"
-  },
-  {
-    "objectID": "slides/01-hello-quarto.html#learn-more",
-    "href": "slides/01-hello-quarto.html#learn-more",
-    "title": "Hello, Quarto!",
-    "section": "Learn more",
-    "text": "Learn more\nquarto.org/docs/guide &gt; Authoring & Computations"
+    "text": "Learn more\nquarto.org/docs/guide &gt; Documents"
   }
 ]
