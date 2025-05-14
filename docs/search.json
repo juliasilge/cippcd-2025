@@ -572,5 +572,159 @@
     "title": "Documents",
     "section": "Learn more",
     "text": "Learn more\nquarto.org/docs/guide &gt; Documents"
+  },
+  {
+    "objectID": "slides/04-dashboards.html#components",
+    "href": "slides/04-dashboards.html#components",
+    "title": "Dashboards",
+    "section": "Components",
+    "text": "Components\n\nMetadata: YAML\nText: Markdown, likely placed in cards\nCode: Executed via jupyter (or knitr), automatically placed in cards\n\n\nWeave it all together, and you have a beautiful, functional dashboard!"
+  },
+  {
+    "objectID": "slides/04-dashboards.html#our-turn-dashing-through-the-snow",
+    "href": "slides/04-dashboards.html#our-turn-dashing-through-the-snow",
+    "title": "Dashboards",
+    "section": "Our turn: Dashing through the snow",
+    "text": "Our turn: Dashing through the snow\n\n\n\nActivity\n\n\nLet’s review the components of hello-penguins-dashboard.qmd."
+  },
+  {
+    "objectID": "slides/04-dashboards.html#notebook-dashboard",
+    "href": "slides/04-dashboards.html#notebook-dashboard",
+    "title": "Dashboards",
+    "section": "Notebook ➝ Dashboard",
+    "text": "Notebook ➝ Dashboard\n\n\nhello-penguins-dashboard.qmd\n\n---\ntitle: Hello, penguins!\nformat: dashboard\n---\n\n# notebook content goes here..."
+  },
+  {
+    "objectID": "slides/04-dashboards.html#dashboard-components",
+    "href": "slides/04-dashboards.html#dashboard-components",
+    "title": "Dashboards",
+    "section": "Dashboard Components",
+    "text": "Dashboard Components\n\nNavigation Bar and Pages — Icon, title, and author along with links to sub-pages (if more than one page is defined).\nSidebars, Rows & Columns, and Tabsets — Rows and columns using markdown heading (with optional attributes to control height, width, etc.). Sidebars for interactive inputs. Tabsets to further divide content.\nCards (Plots, Tables, Value Boxes, Content) — Cards are containers for cell outputs and free form markdown text. The content of cards typically maps to cells in your notebook or source document.\n\n\nAll of these components can be authored and customized within notebook UI or plain text qmd."
+  },
+  {
+    "objectID": "slides/04-dashboards.html#navigation-bar-and-pages",
+    "href": "slides/04-dashboards.html#navigation-bar-and-pages",
+    "title": "Dashboards",
+    "section": "Navigation Bar and Pages",
+    "text": "Navigation Bar and Pages\n\n\n--- \ntitle: Hello, Penguins!\nformat: \n  dashboard:\n    logo: images/penguins-logo.png\n    nav-buttons:\n      - icon: github\n        href: https://github.com/mine-cetinkaya-rundel/quarto-scipy24-exercises\n---\n\n# Data\n\n# Analysis"
+  },
+  {
+    "objectID": "slides/04-dashboards.html#sidebars-page-level",
+    "href": "slides/04-dashboards.html#sidebars-page-level",
+    "title": "Dashboards",
+    "section": "Sidebars: Page Level",
+    "text": "Sidebars: Page Level\n\n\n---\ntitle: \"Sidebar\"\nformat: dashboard\n---\n    \n# Page 1\n\n## {.sidebar}\n\n```{python}\n```\n\n## Column \n\n```{python}\n```\n\n```{python}\n```"
+  },
+  {
+    "objectID": "slides/04-dashboards.html#sidebars-global",
+    "href": "slides/04-dashboards.html#sidebars-global",
+    "title": "Dashboards",
+    "section": "Sidebars: Global",
+    "text": "Sidebars: Global\n\n\n---\ntitle: \"Global Sidebar\"\nformat: dashboard\n---\n    \n# {.sidebar}\n\nSidebar content (e.g. inputs)\n\n# Plot\n\n```{python}\n```\n\n# Data\n\n```{python}\n```"
+  },
+  {
+    "objectID": "slides/04-dashboards.html#layout-rows",
+    "href": "slides/04-dashboards.html#layout-rows",
+    "title": "Dashboards",
+    "section": "Layout: Rows",
+    "text": "Layout: Rows\n\n\n---\ntitle: \"Focal (Top)\"\nformat: dashboard\n---\n    \n## Row {height=70%}\n\n```{python}\n```\n\n## Row {height=30%}\n\n```{python}\n```\n\n```{python}\n```"
+  },
+  {
+    "objectID": "slides/04-dashboards.html#layout-columns",
+    "href": "slides/04-dashboards.html#layout-columns",
+    "title": "Dashboards",
+    "section": "Layout: Columns",
+    "text": "Layout: Columns\n\n\n---\ntitle: \"Focal (Top)\"\nformat: \n  dashboard:\n    orientation: columns\n---\n    \n## Column {width=60%}\n\n```{python}\n```\n\n## Column {width=40%}\n\n```{python}\n```\n\n```{python}\n```"
+  },
+  {
+    "objectID": "slides/04-dashboards.html#tabsets",
+    "href": "slides/04-dashboards.html#tabsets",
+    "title": "Dashboards",
+    "section": "Tabsets",
+    "text": "Tabsets\n\n\n---\ntitle: \"Palmer Penguins\"\nformat: dashboard\n---\n    \n## Row\n\n```{python}\n```\n\n## Row {.tabset}\n\n```{python}\n#| title: Chart 2\n```\n\n```{python}\n#| title: Chart 3\n```"
+  },
+  {
+    "objectID": "slides/04-dashboards.html#plots",
+    "href": "slides/04-dashboards.html#plots",
+    "title": "Dashboards",
+    "section": "Plots",
+    "text": "Plots\n\n\nplotly\n```{python}\n#| title: GDP and Life Expectancy\nimport plotly.express as px\ndf = px.data.gapminder()\npx.scatter(\n  df, x=\"gdpPercap\", y=\"lifeExp\", \n  animation_frame=\"year\", animation_group=\"country\",\n  size=\"pop\", color=\"continent\", hover_name=\"country\", \n  facet_col=\"continent\", log_x=True, size_max=45, \n  range_x=[100,100000], range_y=[25,90]\n)\n```"
+  },
+  {
+    "objectID": "slides/04-dashboards.html#component-tables",
+    "href": "slides/04-dashboards.html#component-tables",
+    "title": "Dashboards",
+    "section": "Tables",
+    "text": "Tables\n\n\ntabulate\n```{python}\nfrom tabulate import tabulate\nfrom IPython.display import Markdown\nMarkdown(tabulate(penguins, showindex=False)}\n```\n\n\n\n\n\nitables\n```{python}\nfrom itables import show\nshow(penguins)\n```"
+  },
+  {
+    "objectID": "slides/04-dashboards.html#value-box-component",
+    "href": "slides/04-dashboards.html#value-box-component",
+    "title": "Dashboards",
+    "section": "Value Boxes",
+    "text": "Value Boxes\n\n\n## Row\n\n```{python}\n#| component: valuebox\n#| title: \"Current Price\"\ndict(icon = \"currency-dollar\",\n     color = \"secondary\",\n     value = get_price(data))\n```\n\n```{python}\n#| component: valuebox\n#| title: \"Change\"\nchange = get_change(data)\ndict(value = change['amount'],\n     icon = change['icon'],\n     color = change['color']) \n```"
+  },
+  {
+    "objectID": "slides/04-dashboards.html#text-content",
+    "href": "slides/04-dashboards.html#text-content",
+    "title": "Dashboards",
+    "section": "Text Content",
+    "text": "Text Content\n\n\n## Column\n\n```{python}\n#| title: Population\npx.area(df, x=\"year\", y=\"pop\", \n        color=\"continent\", \n        line_group=\"country\")\n```\n\n```{python}\n#| title: Life Expectancy\npx.line(df, x=\"year\", y=\"lifeExp\", \n        color=\"continent\", \n        line_group=\"country\")\n```\n\n::: {.card}\nGapminder combines data from multiple sources\ninto unique coherent time-series that can’t be\nfound elsewhere. Learn more about the Gampminder\ndataset at &lt;https://www.gapminder.org/data/&gt;.\n:::"
+  },
+  {
+    "objectID": "slides/04-dashboards.html#expanding-cards",
+    "href": "slides/04-dashboards.html#expanding-cards",
+    "title": "Dashboards",
+    "section": "Expanding Cards",
+    "text": "Expanding Cards\nCards provide an Expand button which appears at bottom right on hover:"
+  },
+  {
+    "objectID": "slides/04-dashboards.html#dashboard-deployment",
+    "href": "slides/04-dashboards.html#dashboard-deployment",
+    "title": "Dashboards",
+    "section": "Dashboard Deployment",
+    "text": "Dashboard Deployment\nDashboards are typically just static HTML pages so can be deployed to any web server or web host.\n\n\n\n\n\n\n\n\nApproach\nWhen?\n\n\n\n\nStatic\nRendered a single time (e.g. when underlying data won’t ever change)\n\n\nScheduled\nRendered on a schedule (e.g. via cron job) to accommodate changing data\n\n\nParameterized\nFully interactive dashboard using Shiny (requires a server for deployment)"
+  },
+  {
+    "objectID": "slides/04-dashboards.html#parameterized-dashboards",
+    "href": "slides/04-dashboards.html#parameterized-dashboards",
+    "title": "Dashboards",
+    "section": "Parameterized Dashboards",
+    "text": "Parameterized Dashboards\n\n\n\n\nAdd a parameters tag to the first cell (based on papermill) :\n```{python}\n#| tags: [parameters]\nticker = \"BA\"\n```\nUse the -P command line option to vary the parameter:\nquarto render dashboard.qmd -P ticker:GOOG"
+  },
+  {
+    "objectID": "slides/04-dashboards.html#interactive-dashboards",
+    "href": "slides/04-dashboards.html#interactive-dashboards",
+    "title": "Dashboards",
+    "section": "Interactive Dashboards",
+    "text": "Interactive Dashboards\nhttps://quarto.org/docs/dashboards/interactivity/shiny-python/\n\n\n\nFor interactive exploration, some dashboards can benefit from a live Python backend\nTo do this with Quarto Dashboards, add interactive Shiny components\nDeploy with or without a server!"
+  },
+  {
+    "objectID": "slides/04-dashboards.html#deployment-of-interactive-dashboards",
+    "href": "slides/04-dashboards.html#deployment-of-interactive-dashboards",
+    "title": "Dashboards",
+    "section": "Deployment of Interactive Dashboards",
+    "text": "Deployment of Interactive Dashboards\nServer\nCloud\nshinyapps.io, HuggingFace Spaces, or roll your own\nOn-Prem\nShiny Server (open source, Posit Connect (commercial), or roll your own\n\nServerless\nUsing Pyodide such as with this example"
+  },
+  {
+    "objectID": "slides/04-dashboards.html#learn-more",
+    "href": "slides/04-dashboards.html#learn-more",
+    "title": "Dashboards",
+    "section": "Learn more",
+    "text": "Learn more\nquarto.org/docs/dashboards"
+  },
+  {
+    "objectID": "slides/04-dashboards.html#plots-1",
+    "href": "slides/04-dashboards.html#plots-1",
+    "title": "Dashboards",
+    "section": "Plots",
+    "text": "Plots\n\n\nipyleaflet\n```{python}\n#| title: \"World Map\"\n#| padding: 0px\nfrom ipyleaflet import Map, basemaps, basemap_to_tiles\nMap(basemap=basemap_to_tiles(basemaps.OpenStreetMap.Mapnik),\n    center=(48.204793, 350.121558), zoom=2)\n```"
+  },
+  {
+    "objectID": "slides/04-dashboards.html#our-turn",
+    "href": "slides/04-dashboards.html#our-turn",
+    "title": "Dashboards",
+    "section": "Our turn",
+    "text": "Our turn\n\n\n\nActivity\n\n\nLet’s review the components of hello-penguins-dashboard.qmd."
   }
 ]
