@@ -28,7 +28,6 @@ initialise_python() {
     source .venv/bin/activate
     python3 -m pip install jupyter papermill
     python3 -m pip install -r requirements.txt
-    python3 -m pip freeze > requirements.txt
   fi
 }
 
@@ -38,6 +37,7 @@ initialise_uv() {
     uv venv
     source .venv/bin/activate
     uv add jupyter papermill
+    uv pip install -r requirements.txt
     uv sync
   fi
 }
