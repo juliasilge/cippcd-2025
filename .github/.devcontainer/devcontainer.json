@@ -11,9 +11,7 @@
 	"remoteUser": "vscode",
 	"features": {
 		"./quarto-computing-dependencies": {
-			"rDeps": "rmarkdown,languageserver,nx10/httpgd@v2.0.3,prompt,lintr",
-			"pythonDeps": "jupyter,papermill",
-			"juliaDeps": "IJulia"
+			"pythonDeps": "jupyter,papermill"
 		},
 		"./uv": {
 			"version": "latest"
