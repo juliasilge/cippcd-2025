@@ -1,6 +1,7 @@
 great_tables
 ipykernel
 jupyter
+papermill
 palmerpenguins
 pandas
 plotnine
