@@ -33,12 +33,9 @@ initialise_python() {
 
 initialise_uv() {
   if [ "${FORCE}" = true ] || [ ! -f "uv.lock" ]; then
-    uv init --no-package --vcs none --bare --no-readme --author-from none
     uv venv
     source .venv/bin/activate
-    uv add jupyter papermill
     uv pip install -r requirements.txt
-    uv sync
   fi
 }
 
