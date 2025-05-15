@@ -52,6 +52,7 @@ Or alternatively, set yourself up to work locally:
 - Install [Quarto](https://quarto.org/docs/get-started/)
 - Install VS Code and the Quarto and Jupyter extensions (or [Positron](https://positron.posit.co/download)!)
 - Clone the repo
+- Make an environment
 - Install the Python packages from `requirements.txt`
 
 # What is Quarto? {background-gradient="linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%)"}
@@ -251,6 +252,8 @@ quarto preview notebook.qmd --to pdf
 ## Activity
 
 In VS Code, open the `hello-penquins.qmd` file. Render the document to HTML.
+
+-   Be aware you may need to use "Python: Select Interpreter" to use the local `.venv`
 
 -   Add an `author` field in the YAML and add your name.
 

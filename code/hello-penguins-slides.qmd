@@ -31,8 +31,8 @@ penguins = load_penguins()
 The table below shows the first 10 penguins from the dataset.
 
 ```{python}
-#| label: penguins-top10
-gt.GT(penguins.head(n = 10))
+# | label: penguins-top10
+penguins.head(10).to_html()
 ```
 
 # Analysis

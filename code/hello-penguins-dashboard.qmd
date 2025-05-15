@@ -35,7 +35,7 @@ The Palmer penguins dataset by Allison Horst, Alison Hill, and Kristen Gorman wa
 
 ###  {width="40%"}
 
-![](images/penguins.png){fig-alt="Illustration of three species of penguins: Gentoo, Chinstrap, and Adelie." width="300"}
+![](../images/penguins.png){fig-alt="Illustration of three species of penguins: Gentoo, Chinstrap, and Adelie." width="300"}
 
 ##  {height="70%"}
 
