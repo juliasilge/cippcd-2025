@@ -84,7 +84,7 @@ case $WHAT in
     initialise_r
     ;;
   python)
-    initialise_uv
+    initialise_python
     ;;
   julia)
     initialise_julia
