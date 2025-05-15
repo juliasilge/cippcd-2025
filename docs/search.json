@@ -200,7 +200,7 @@
     "href": "slides/02-documents.html#literate-programming",
     "title": "Documents",
     "section": "Literate programming",
-    "text": "Literate programming\nLiterate programming is writing out the program logic in a human language with included (separated by a primitive markup) code snippets and macros.\n---\ntitle: plotnine demo\ndate: 7/8/2024\nformat: html\n---\n\nThere is a relationship between flipper length and body mass.\n\n```{python}\n#| label: fig-penguins\nimport plotnine as p9\nfrom palmerpenguins import load_penguins\n\npenguins = load_penguins()\n\n(\n    p9.ggplot(\n        penguins, \n        p9.aes(x = \"flipper_length_mm\", y = \"body_mass_g\")\n    )\n    + p9.geom_point()\n    + p9.stat_smooth(method=\"lm\")\n    + p9.labs(\n        x = \"Flipper length (mm)\", \n        y = \"Body mass (g)\", \n        title = \"Body mass vs. flipper length of Palmer Penguins\"\n    )\n)\n```\n\nSource: https://en.wikipedia.org/wiki/Literate_programming"
+    "text": "Literate programming\nLiterate programming is writing out the program logic in a human language with included (separated by a primitive markup) code snippets and macros.\n---\ntitle: plotnine demo\ndate: 2025-05-19\nformat: html\n---\n\nThere is a relationship between flipper length and body mass.\n\n```{python}\n#| label: fig-penguins\nimport plotnine as p9\nfrom palmerpenguins import load_penguins\n\npenguins = load_penguins()\n\n(\n    p9.ggplot(\n        penguins, \n        p9.aes(x = \"flipper_length_mm\", y = \"body_mass_g\")\n    )\n    + p9.geom_point()\n    + p9.stat_smooth(method=\"lm\")\n    + p9.labs(\n        x = \"Flipper length (mm)\", \n        y = \"Body mass (g)\", \n        title = \"Body mass vs. flipper length of Palmer Penguins\"\n    )\n)\n```\n\nSource: https://en.wikipedia.org/wiki/Literate_programming"
   },
   {
     "objectID": "slides/02-documents.html#yaml",
@@ -620,7 +620,7 @@
     "href": "slides/01-hello-quarto.html#join-our-workspace-on-github-codespaces",
     "title": "Hello, Quarto!",
     "section": "Join our workspace on GitHub Codespaces",
-    "text": "Join our workspace on GitHub Codespaces\n github.com/juliasilge/cippcd-2025\n\nOr alternatively, set yourself up to work locally:\n\nInstall Python (perhaps using pyenv)\nInstall Quarto\nInstall VS Code and the Quarto and Jupyter extensions (or Positron!)\nClone the repo\nInstall the Python packages from requirements.txt"
+    "text": "Join our workspace on GitHub Codespaces\n github.com/juliasilge/cippcd-2025\n\nOr alternatively, set yourself up to work locally:\n\nInstall Python (perhaps using pyenv)\nInstall Quarto\nInstall VS Code and the Quarto and Jupyter extensions (or Positron!)\nClone the repo\nMake an environment\nInstall the Python packages from requirements.txt"
   },
   {
     "objectID": "slides/01-hello-quarto.html#quarto-is",
@@ -704,7 +704,7 @@
     "href": "slides/01-hello-quarto.html#your-turn",
     "title": "Hello, Quarto!",
     "section": "Your turn",
-    "text": "Your turn\n\n\n\nActivity\n\n\nIn VS Code, open the hello-penquins.qmd file. Render the document to HTML.\n\nAdd an author field in the YAML and add your name.\nAdd some text and style it with bold, italics, etc, using the source editor as well as the visual editor.\nModify the figure to add units to the axis labels: grams for body weight and mm (milimeters) for flipper length. Render or preview the document and make sure the changes are reflected in the HTML output.\nChange the html theme to sketchy. See https://quarto.org/docs/output-formats/html-themes.html for documentation on HTML theming.\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
+    "text": "Your turn\n\n\n\nActivity\n\n\nIn VS Code, open the hello-penquins.qmd file. Render the document to HTML.\n\nBe aware you may need to use “Python: Select Interpreter” to use the local .venv\nAdd an author field in the YAML and add your name.\nAdd some text and style it with bold, italics, etc, using the source editor as well as the visual editor.\nModify the figure to add units to the axis labels: grams for body weight and mm (milimeters) for flipper length. Render or preview the document and make sure the changes are reflected in the HTML output.\nChange the html theme to sketchy. See https://quarto.org/docs/output-formats/html-themes.html for documentation on HTML theming.\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "slides/01-hello-quarto.html#wrap-up",
